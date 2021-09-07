@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "site portfolio developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuzmich84/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "front-end",
+    "developer"
+  ],
+  "author": "Dmitry Kuchukov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuzmich84/portfolio/issues"
+  },
+  "homepage": "https://github.com/kuzmich84/portfolio#readme"
+}
