@@ -4,7 +4,8 @@
   "description": "site portfolio developer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/kuzmich84/portfolio/issues"
   },
-  "homepage": "https://github.com/kuzmich84/portfolio#readme"
+  "homepage": "https://github.com/kuzmich84/portfolio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
