@@ -1,0 +1,27 @@
+input:required:valid {
+    border-color: green;
+}
+
+.small {
+    display: none;
+    font-weight: 500;
+}
+
+.cross,
+.check {
+    justify-content: center;
+    align-items: center;
+    top: 1.25rem;
+    right: 1rem;
+    position: absolute;
+    background: lightgreen;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+    border-radius: 50px;
+    display: none;
+}
+
+.vg-contact-form .btn {
+    cursor: pointer;
+}
