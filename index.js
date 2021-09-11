@@ -3,6 +3,7 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const homeRoutes = require('./routes/home');
 const blogRoutes = require('./routes/blog');
+const adminRoutes = require('./routes/admin');
 
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(express.static('public'));
 
 app.use('/', homeRoutes);
 app.use('/blog-minibar', blogRoutes);
+app.use('/admin', adminRoutes);
 
 
 const PORT = process.env.PORT || 3000;

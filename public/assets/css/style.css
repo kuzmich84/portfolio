@@ -25,3 +25,7 @@ input:required:valid {
 .vg-contact-form .btn {
     cursor: pointer;
 }
+
+.form-group label {
+    font-weight: bold;
+}
