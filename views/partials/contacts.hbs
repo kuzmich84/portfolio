@@ -9,35 +9,35 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <form class="vg-contact-form">
+                <form class="vg-contact-form" method="post">
                     <div class="form-row">
                         <div class="col-12 wow fadeInUp">
-                            <input class="form-control" type="text" name="Name" placeholder="Your Name">
+                            <input class="form-control" id="name" type="text" name="name" placeholder="Your Name">
                             <div class="cross"><i class="fas fa-times"></i></div>
                             <div class="check"><i class="fas fa-check"></i></div>
-                            <small>Please fill the form</small>
+                            <small>Please enter your name</small>
                         </div>
                         <div class="col-6 wow fadeInUp">
-                            <input class="form-control" type="text" name="Email" placeholder="Email Address">
+                            <input class="form-control" id="email" type="text" name="email" placeholder="Email Address">
                             <div class="cross"><i class="fas fa-times"></i></div>
                             <div class="check"><i class="fas fa-check"></i></div>
-                            <small>Please fill the form</small>
+                            <small>Please enter your email</small>
                         </div>
                         <div class="col-6 wow fadeInUp">
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject">
+                            <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
                             <div class="cross"><i class="fas fa-times"></i></div>
                             <div class="check"><i class="fas fa-check"></i></div>
-                            <small>Please fill the form</small>
+                            <small>Please enter subject</small>
                         </div>
                         <div class="col-12 wow fadeInUp">
-                            <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Enter message here.."></textarea>
                             <div class="cross"><i class="fas fa-times"></i></div>
                             <div class="check"><i class="fas fa-check"></i></div>
-                            <small>Please fill the form</small>
+                            <small>Please enter your message</small>
                         </div>
                         <div>
-                        <button  type="submit" class="btn btn-theme btn-contact mt-3 wow fadeInUp ml-1">Send Message</button>
-                        <small>Please fill the form</small>
+                        <button  type="submit" class="btn btn-theme btn-contact mt-3 wow fadeInUp ml-1" disabled>Send Message</button>
+                         <p class="success"></p>
                         </div>
                     </div>
                 </form>
