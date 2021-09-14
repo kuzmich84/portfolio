@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const homeRoutes = require('./routes/home');
 const blogRoutes = require('./routes/blog');
 const adminRoutes = require('./routes/admin');
+const contactRoutes = require('./routes/contacts');
 
 
 const app = express();
@@ -16,11 +17,13 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({extended: false}));
 
 app.use('/', homeRoutes);
 app.use('/blog-minibar', blogRoutes);
 app.use('/admin', adminRoutes);
+app.use('/receive-contact', contactRoutes);
 
 
 const PORT = process.env.PORT || 3000;

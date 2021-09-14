@@ -1,8 +1,4 @@
-input:required:valid {
-    border-color: green;
-}
-
-.small {
+.vg-contact-form small {
     display: none;
     font-weight: 500;
 }
