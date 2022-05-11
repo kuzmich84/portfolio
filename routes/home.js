@@ -1,11 +1,9 @@
-const {Router} = require('express');
-const router = Router();
+const {index} = require("./defaults")
+const {Router} = require('express')
+const router = Router()
 
-router.get('/', (req, res)=>{
-    res.status(200).render('index', {
-        title: `Front-end Developer Dmitry Kuchukov`,
-        isHome: true,
-    });
+router.get('/', (req, res) => {
+    index(req, res)
 })
 
-module.exports = router;
+module.exports = router
