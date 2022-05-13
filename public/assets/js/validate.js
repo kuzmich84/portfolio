@@ -28,7 +28,7 @@ formControl.forEach(element => {
     })
 })
 
-btn.addEventListener("click", (e) => {
+btn.addEventListener("submit", (e) => {
     e.preventDefault();
     success.innerHTML = "Your message sent. Thank you."
 
