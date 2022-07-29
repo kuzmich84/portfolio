@@ -1,93 +1,89 @@
 <!-- Back to top button -->
-  <div class="btn-back_to_top">
+<div class="btn-back_to_top">
     <span class="ti-arrow-up"></span>
-  </div>
-  
-  <!-- Setting button -->
-  <div class="config">
+</div>
+
+<!-- Setting button -->
+<div class="config">
     <div class="template-config">
-      <!-- Settings -->
-      <div class="d-block">
-        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
-      </div>
-      <!-- Puschase -->
-      <div class="d-block">
-        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
-      </div>
-      <!-- Help -->
-      <div class="d-block">
-        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
-      </div>
+        <!-- Settings -->
+        <div class="d-block">
+            <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+        </div>
+        <!-- Puschase -->
+        <div class="d-block">
+            <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template"
+               data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+        </div>
+        <!-- Help -->
+        <div class="d-block">
+            <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span
+                    class="ti-help"></span></a>
+        </div>
     </div>
     <div class="set-menu">
-      <p>Select Color</p>
-      <div class="color-bar" data-toggle="selected">
-        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
-        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
-        <span class="color-item bg-theme-green" data-class="theme-green"></span>
-        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
-        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
-      </div>
-      <select class="custom-select d-block my-2" id="change-page">
-        <option value="">Choose Page</option>
-        <option value="index">Topbar</option>
-        <option value="blog-topbar">Blog (Topbar)</option>
-        <option value="index-2">Minibar</option>
-        <option value="blog-minibar">Blog (Minibar)</option>
-      </select>
+        <p>Select Color</p>
+        <div class="color-bar" data-toggle="selected">
+            <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+            <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+            <span class="color-item bg-theme-green" data-class="theme-green"></span>
+            <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+            <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+        </div>
+        <select class="custom-select d-block my-2" id="change-page">
+            <option value="">Choose Page</option>
+            <option value="index">Topbar</option>
+            <option value="blog-topbar">Blog (Topbar)</option>
+            <option value="index-2">Minibar</option>
+            <option value="blog-minibar">Blog (Minibar)</option>
+        </select>
     </div>
-  </div>
-  
-  <div class="topbar-nav fixed-top">
+</div>
+
+<div class="topbar-nav fixed-top">
     <div class="brand">
-      <img src="assets/favicon.ico" alt="" width="30" height="30">
+        <img src="assets/favicon.ico" alt="" width="30" height="30">
     </div>
     <h3 class="ml-1">Gram</h3>
     <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
-  </div>
-  
-  <!-- Minibar -->
-  <div class="minibar">
+</div>
+
+<!-- Minibar -->
+<div class="minibar">
     <div class="header">
-      <div class="brand">
-        
-      </div>
+        <div class="brand">
+
+        </div>
     </div>
     {{> navbar}}
-  </div>
-  
-  <div class="vg-main-wrapper">
-    <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg);">
-      <div class="caption wow zoomInUp">
-        <h1 class="fw-normal">Welcome</h1>
-        <h2 class="fw-medium fg-theme">{{name}}</h2>
-        <p class="tagline">{{profession}}</p>
-      </div>
-    </div>
-    
+</div>
+
+<div class="vg-main-wrapper">
+    {{> hero}}
+
     <!-- Page About -->
     {{> about }}
-    
+
     <!-- Page Service -->
 
     <!-- End page services -->
-    
+
     <!-- reviews -->
-  <!-- End reviews -->
-    
+    <!-- End reviews -->
+
     <!-- Portfolio page -->
-      {{> portfolio}}
-   <!-- End Portfolio page -->
-    
+    {{> portfolio}}
+    <!-- End Portfolio page -->
+
     <!-- Page Blog -->
     <!-- End page blog -->
-    
-    <!-- Page Contact -->
-      {{> contacts}}
-    <!-- End page contact -->
-    
 
-  </div> <!-- End main wrapper -->
+    <!-- Page Contact -->
+    {{> contacts}}
+    <!-- End page contact -->
+
+
+</div> <!-- End main wrapper -->
 
 
 
