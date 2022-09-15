@@ -12,11 +12,11 @@ exports.index = (req, res) => {
         hardSkills: [
             {
                 name: 'JavaScript',
-                progress: 86
+                progress: 85
             },
             {
                 name: 'React',
-                progress: 85
+                progress: 80
             },
             {
                 name: 'HTML + CSS',
@@ -94,9 +94,41 @@ exports.index = (req, res) => {
         projects: [
             {
                 name: 'Pink',
-                description: 'App images',
-                image: '../assets/img/work/work-1.jpg',
+                description: 'Adaptive layout',
+                image: '../assets/img/work/pink-project.jpg',
+                link:'#',
+                gitHub: 'https://github.com/kuzmich84/625447-pink-18',
+                type: 'learning'
+
+            },
+            {
+                name: 'Glassy store',
+                description: 'Layout',
+                image: '../assets/img/work/glassy-shop.jpg',
+                link:'#',
+                gitHub: 'https://github.com/kuzmich84/625447-gllacy-25',
+                type: 'learning'
+            },
+
+            {
+                name: 'Technomart store',
+                description: 'Layout',
+                image: '../assets/img/work/techmart.jpg',
+                link:'#',
+                gitHub: 'https://github.com/kuzmich84/625447-technomart-25',
+                type: 'pet'
+            },
+            {
+                name: 'Watch To Watch',
+                description: 'React App',
+                image: '../assets/img/work/react-watch-to-watch.jpg',
+                link:'#',
+                gitHub: 'https://github.com/kuzmich84/625447-what-to-watch',
+                type: 'pet react'
             }
+
+        
+            
         ]
     });
 }
